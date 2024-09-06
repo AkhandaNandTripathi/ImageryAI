@@ -1,0 +1,18 @@
+{
+  "functions": {
+    "api/bot.py": {
+      "runtime": "python3.9",
+      "handler": "app"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/bot",
+      "dest": "/api/bot.py"
+    },
+    {
+      "src": "/",
+      "dest": "/api/index.py"
+    }
+  ]
+}
